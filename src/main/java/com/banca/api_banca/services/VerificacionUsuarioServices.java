@@ -2,8 +2,11 @@ package com.banca.api_banca.services;
 
 import com.banca.api_banca.models.VerificacionUsuario;
 import com.banca.api_banca.repositories.VerificacionUsuarioRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class VerificacionUsuarioServices {
+
 
     VerificacionUsuarioRepository repository;
     public  VerificacionUsuario getverificacion(Long idUsuario, Long idPregunta, String respuesta,Long idicono) {

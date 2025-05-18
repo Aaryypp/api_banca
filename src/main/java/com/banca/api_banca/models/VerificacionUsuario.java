@@ -1,4 +1,5 @@
 package com.banca.api_banca.models;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,7 +12,7 @@ public class VerificacionUsuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idVerificacion;
-
+    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "id_usuario")
     private Usuario usuario;

@@ -1,6 +1,7 @@
 package com.banca.api_banca.controllers;
 import com.banca.api_banca.models.Usuario;
 import com.banca.api_banca.services.UsuarioService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api")
 public class UsuarioController {
+    @Autowired
     private  UsuarioService usuarioService;
     @GetMapping("/login")
     public ResponseEntity<Usuario> login(
