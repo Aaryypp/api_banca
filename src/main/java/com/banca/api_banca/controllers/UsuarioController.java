@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = {"${settings.cors_origin}"})
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/users")
 public class UsuarioController {
     @Autowired
     private  UsuarioService usuarioService;
@@ -23,7 +23,4 @@ public class UsuarioController {
             return ResponseEntity.notFound().build();
         }
     }
-
-
-
 }
