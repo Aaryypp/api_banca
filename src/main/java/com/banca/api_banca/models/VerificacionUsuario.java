@@ -27,4 +27,3 @@ public class VerificacionUsuario {
     @JoinColumn(name = "id_icono")
     private IconoSeguridad icono;
 }
-
